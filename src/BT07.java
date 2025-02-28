@@ -6,6 +6,10 @@ public class BT07 {
         int gio = sc.nextInt();
         int phut = sc.nextInt();
         int giay = sc.nextInt();
+        if (gio < 0 || phut < 0 || phut >= 60 || giay < 0 || giay >= 60) {
+            System.out.println("Lỗi: Thời gian nhập vào không hợp lệ!");
+            return;
+        }
         int themgio = sc.nextInt();
         int themphut = sc.nextInt();
         int themgiay = sc.nextInt();
